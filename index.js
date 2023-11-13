@@ -5,6 +5,8 @@ const authRoutes = require("./routes/authRoutes");
 const todoRoutes = require("./routes/todoRoutes");
 require("dotenv").config();
 
+console.log(process.env.DB_NAME);
+
 const sequelize = new Sequelize(
   process.env.DB_NAME,
   process.env.DB_USER,
@@ -15,6 +17,7 @@ const sequelize = new Sequelize(
     dialectModule: require("mysql2"),
   }
 );
+
 const User = require("./models/Users")(sequelize);
 const Todo = require("./models/Todos")(sequelize);
 
