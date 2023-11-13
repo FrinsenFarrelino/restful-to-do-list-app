@@ -11,6 +11,5 @@ router.get("/all", todoController.getAllTodos);
 router.get("/:id", todoController.getTodoById);
 router.put("/:id", todoController.updateTodo);
 router.delete("/:id", todoController.deleteTodo);
-router.delete("/all", todoController.deleteAllTodos);
 
 module.exports = router;

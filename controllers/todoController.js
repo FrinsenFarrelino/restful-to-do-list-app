@@ -77,20 +77,10 @@ async function deleteTodo(req, res) {
   }
 }
 
-async function deleteAllTodos(req, res) {
-  try {
-    await Todo.destroy({ where: { userId: req.user.id } });
-    res.status(204).json();
-  } catch (err) {
-    res.status(500).json({ message: "Internal Server Error" });
-  }
-}
-
 module.exports = {
   createTodo,
   getAllTodos,
   getTodoById,
   updateTodo,
   deleteTodo,
-  deleteAllTodos,
 };
