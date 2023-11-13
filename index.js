@@ -5,8 +5,6 @@ const authRoutes = require("./routes/authRoutes");
 const todoRoutes = require("./routes/todoRoutes");
 require("dotenv").config();
 
-console.log(process.env.DB_NAME);
-
 const sequelize = new Sequelize(
   process.env.DB_NAME,
   process.env.DB_USER,
@@ -43,5 +41,6 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(process.env.PORT, () => {
+  console.log(process.env.DB_NAME);
   console.log(`Server is running on http://localhost:${process.env.PORT}`);
 });
