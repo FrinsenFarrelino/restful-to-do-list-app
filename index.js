@@ -13,8 +13,11 @@ const sequelize = new Sequelize(
     host: process.env.DB_HOST,
     dialect: "mysql",
     dialectModule: require("mysql2"),
+    logging: false,
   }
 );
+
+// const sequelize = new Sequelize(process.env.DATABASE_URL, { logging: false });
 
 const User = require("./models/Users")(sequelize);
 const Todo = require("./models/Todos")(sequelize);

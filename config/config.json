@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "restful_todo",
-    "host": "127.0.0.1",
+    "username": "freedb_frinsen",
+    "password": "%avY!45DQvBvGgt",
+    "database": "freedb_restful_todo",
+    "host": "sql.freedb.tech",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "restful_todo",
-    "host": "127.0.0.1",
+    "username": "freedb_frinsen",
+    "password": "%avY!45DQvBvGgt",
+    "database": "freedb_restful_todo",
+    "host": "sql.freedb.tech",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "restful_todo",
-    "host": "127.0.0.1",
+    "username": "freedb_frinsen",
+    "password": "%avY!45DQvBvGgt",
+    "database": "freedb_restful_todo",
+    "host": "sql.freedb.tech",
     "dialect": "mysql"
   }
 }
